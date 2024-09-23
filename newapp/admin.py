@@ -2,4 +2,4 @@ from django.contrib import admin
 from newapp.models import *
 
 # Register your models here.
-admin.site.register(Fosters)
+admin.site.register(Foster)
