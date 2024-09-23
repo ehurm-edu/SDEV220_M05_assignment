@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>State</td>
+            <td>ZIP</td>
+        </thead>
+        {% for i in foster_key %}
+        <tr>
+            <td>{{ i.fosterID }}</td>
+            <td>{{ i.fosterName }}</td>
+            <td>{{ i.fosterEmail }}</td>
+            <td>{{ i.fosterPhone}}</td>
+            <td>{{ i.fosterStreet }}</td>
+            <td>{{ i.fosterCity }}</td>
+            <td>{{ i.fosterState }}</td>
+            <td>{{ i.fosterZip }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
